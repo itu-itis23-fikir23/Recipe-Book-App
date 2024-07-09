@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Roasted Chicken",
+        "ingredients": "whole chicken, lemons, garlic, olive oil, dried thyme, salt, pepper, parsley",
+        "instructions": "Preheat oven. Stuff chicken with lemon and garlic. Rub with oil, garlic, thyme, salt, and pepper. Roast. Garnish with parsley.",
+        "id": 2,
+        "image": "chicken.jpg",
+        "category": "meat"
+    },
+    {
+        "title": "Vegetarian Chili",
+        "ingredients": "olive oil, onion, garlic, bell pepper, carrots, zucchini, kidney beans, black beans, diced tomatoes, vegetable broth, chili powder, ground cumin, salt, pepper, optional toppings",
+        "instructions": "Sauce vegetables. Add beans, tomatoes, broth, and spices. Simmer. Serve with optional toppings",
+        "id": 3,
+        "image": "chili.jpg",
+        "category": "vegetarian"
+    }
+]

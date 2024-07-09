@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratatuy</title>
+    <!-- Bootstrap CSS links-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-custom">
+        <img src="images/scale.png" alt="Logo">
+        <a class="navbar-brand navbar-brand-custom" href="#">
+            WELCOME TO THE RATATUY!
+        </a>
+    </nav>
+    <!-- Page Content -->
+    <div>  
+        <img src="images/ratatuy.png" class="img-fluid mx-auto d-block" alt="Ratatuy Image">
+    </div>
+    <div class="container mt-5">
+        <!-- Filter buttons -->
+        <div class="btn-group mb-3" role="group" aria-label="Recipe Categories">
+            <button type="button" class="btn btn-info" onclick="filterRecipes('vegetarian')">Vegetarian</button>
+            <button type="button" class="btn btn-info" onclick="filterRecipes('dessert')">Dessert</button>
+            <button type="button" class="btn btn-info" onclick="filterRecipes('meat')">Meat</button>
+            <button type="button" class="btn btn-info" onclick="filterRecipes('pastry')">Pastry</button>
+            <button type="button" class="btn btn-info" onclick="fetchRecipes()">All</button>
+        </div>
+        <!-- Search bar -->
+        <div class="input-group mb-3">
+            <input type="text" id="search-input" class="form-control" placeholder="Search for recipes...">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" onclick="searchRecipes()">Search</button>
+            </div>
+        </div>
+        <div class="row" id="recipe-list">
+        </div>
+        <div id="recipe-form">
+            <!-- Form for adding new recipe -->
+            <h2>Add New Recipe</h2>
+            <input type="text" id="title" class="form-control mb-2" placeholder="Title">
+            <textarea id="ingredients" class="form-control mb-2" placeholder="Ingredients"></textarea>
+            <textarea id="instructions" class="form-control mb-2" placeholder="Instructions"></textarea>
+            <select id="category" class="form-control mb-2">
+                <option value="" disabled selected>Select category</option>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="dessert">Dessert</option>
+                <option value="meat">Meat</option>
+                <option value="pastry">Pastry</option>
+            </select>
+            <input type="file" id="image" class="form-control mb-2">           
+            <button class="btn btn-primary" onclick="addRecipe()">Add Recipe</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

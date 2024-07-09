@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d3eaa6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+img {
+    width: 1000px;
+    margin-bottom: 20px;
+    border-radius: 8px; /* Optional: Add rounded corners to the image */
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #cfe987;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#recipe-form {
+    margin-bottom: 20px;
+}
+
+#recipe-form input, #recipe-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+#image {
+    margin-bottom: 10px; 
+}
+
+#recipes {
+    margin-top: 20px;
+}
+
+.recipe-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.recipe {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: #dfe1c6;
+}
+
+.recipe h3 {
+    margin: 0;
+    color: #333;
+}
+
+.recipe p {
+    margin: 5px 0;
+    color: #666;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background: #28a745;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #218838;
+}
+.navbar-custom {
+    background-color: #a36b16; /* Custom color for the navbar */
+}
+.navbar-brand-custom {
+    font-size: 1.5rem; /* Increase font size */
+    font-weight: bold; /* Make the text bold */
+    color: #3e3718 !important; /* Change text color */
+}
+.navbar-custom img {
+    height: 40px;
+    width: auto; 
+    vertical-align: middle;
+}
